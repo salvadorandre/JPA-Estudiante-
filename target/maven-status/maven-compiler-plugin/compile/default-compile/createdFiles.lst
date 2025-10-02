@@ -1,0 +1,12 @@
+com\mycompany\proyectobd\ProyectoBd.class
+com\mycompany\proyectobd\Logica\Controladora.class
+com\mycompany\proyectobd\Logica\Estudiante_.class
+com\mycompany\proyectobd\Persistencia\exceptions\PreexistingEntityException.class
+com\mycompany\proyectobd\Interfaz\EstudianteUI.class
+com\mycompany\proyectobd\Persistencia\exceptions\IllegalOrphanException.class
+com\mycompany\proyectobd\Persistencia\exceptions\NonexistentEntityException.class
+com\mycompany\proyectobd\Interfaz\EstudianteUI$2.class
+com\mycompany\proyectobd\Interfaz\EstudianteUI$1.class
+com\mycompany\proyectobd\Logica\Estudiante.class
+com\mycompany\proyectobd\Persistencia\ControladoraPersistencia.class
+com\mycompany\proyectobd\Persistencia\EstudianteJpaController.class
