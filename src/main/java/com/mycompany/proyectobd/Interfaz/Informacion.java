@@ -38,6 +38,7 @@ public class Informacion extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         editar = new javax.swing.JButton();
         eliminar = new javax.swing.JButton();
+        recargarTabla = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -99,6 +100,13 @@ public class Informacion extends javax.swing.JFrame {
             }
         });
 
+        recargarTabla.setText("RECARGAR");
+        recargarTabla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                recargarTablaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -109,7 +117,8 @@ public class Informacion extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(editar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE))
+                    .addComponent(eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(recargarTabla, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE))
                 .addContainerGap(55, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -131,6 +140,8 @@ public class Informacion extends javax.swing.JFrame {
                         .addComponent(editar)
                         .addGap(18, 18, 18)
                         .addComponent(eliminar)
+                        .addGap(18, 18, 18)
+                        .addComponent(recargarTabla)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
@@ -194,9 +205,14 @@ public class Informacion extends javax.swing.JFrame {
         
     }//GEN-LAST:event_editarActionPerformed
 
+    private void recargarTablaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recargarTablaActionPerformed
+        
+        cargarTabla(); 
+    }//GEN-LAST:event_recargarTablaActionPerformed
+
     
     
-    public void cargarTabla() { 
+    private void cargarTabla() { 
         DefaultTableModel modelo = new DefaultTableModel() {
             @Override
             public boolean isCellEditable(int row, int column) {
@@ -236,6 +252,7 @@ public class Informacion extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton recargarTabla;
     private javax.swing.JTable tabla;
     // End of variables declaration//GEN-END:variables
 }

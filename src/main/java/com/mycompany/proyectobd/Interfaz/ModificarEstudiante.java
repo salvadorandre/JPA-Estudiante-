@@ -109,7 +109,7 @@ public class ModificarEstudiante extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarActionPerformed
-        Estudiante estudiante = control.buscarEstudiante(this.idEstudiante);
+        Estudiante estudiante = control.buscarEstudiante(this.idEstudiante); 
         String nombreEstudiante = nombreEdit.getText();
         String apellidoEstudiante = apellidoEdit.getText();
         String generoEstudiante = generoEdit.getText();
@@ -122,9 +122,7 @@ public class ModificarEstudiante extends javax.swing.JFrame {
         }
         
        JOptionPane.showMessageDialog(null, "Estudiante Actualizado");
-       
-       Informacion info = new Informacion(); 
-       info.cargarTabla();
+    
        
 
     }//GEN-LAST:event_guardarActionPerformed
