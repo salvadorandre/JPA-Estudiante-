@@ -1,4 +1,4 @@
-
+    
 package com.mycompany.proyectobd.Logica;
 
 import java.io.Serializable;
