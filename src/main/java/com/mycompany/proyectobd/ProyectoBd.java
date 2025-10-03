@@ -5,6 +5,7 @@
 package com.mycompany.proyectobd;
 
 import com.mycompany.proyectobd.Interfaz.EstudianteUI;
+import com.mycompany.proyectobd.Interfaz.Inicio;
 
 
 /**
@@ -16,10 +17,10 @@ public class ProyectoBd {
     public static void main(String[] args) {
         
         
-        EstudianteUI estu = new EstudianteUI(); 
+        Inicio inicio = new Inicio(); 
         
-        estu.setVisible(true);
-        estu.setTitle("Estudiantes");
-        estu.setLocationRelativeTo(null);
+        inicio.setVisible(true);
+        inicio.setLocationRelativeTo(null);
+        inicio.setTitle("Inicio");
     }
 }
